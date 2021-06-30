@@ -20,14 +20,15 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-$db_user = '3868932_name';
-$db_password = '222022deni';
-$db_name = '3868932_name';
-$db_host = 'fdb31.runhosting.com';
+$db_user = 'epiz_29019483';
+$db_password = 'Ky34zAH1HBvN';
+$db_name = 'epiz_29019483_data';
+$db_host = 'sql211.epizy.com';
 
 if ($_SERVER['HTTP_HOST'] == 'mobile-app.local') {
     $db_user = 'root';
     $db_password = '';
+    $db_name = '3868932_name';
     $db_host = 'localhost';
 }
 /** Имя базы данных для WordPress */
