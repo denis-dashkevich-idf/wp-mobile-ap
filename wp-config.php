@@ -21,7 +21,7 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 $db_user = '3868932_name';
-$db_password = 'rh6MEi9PRU8MV@m';
+$db_password = '222022deni';
 $db_name = '3868932_name';
 $db_host = 'fdb31.runhosting.com';
 
