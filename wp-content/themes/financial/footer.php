@@ -1,48 +1,65 @@
 </main>
 
 <footer class="footer">
-  <div class="footer__info-block">
-    <div class="container">
-      <div class="row">
-        <div class="footer__column">
-          <p class="footer__column-title">Get In Touch</p>
-          <p class="footer__col-text">
-            the quick fox jumps over the
-            lazy dog
-          </p>
-
-          <div class="footer__socials">
-            <?php if (have_rows('socials', 'options')) : ?>
-              <?php while (have_rows('socials', 'options')) : the_row(); ?>
-                <a href="<?php the_sub_field('link', 'option'); ?>" class="footer__social-link">
-                  <?php $logo = get_sub_field('icon', 'option'); ?>
-                  <?php echo file_get_contents($logo); ?>
-                </a>
-              <?php endwhile; ?>
-            <?php endif; ?>
+  <div class="container">
+    <div class="row">
+      <div class="footer__inner">
+        <div class="row">
+          <div class="footer__col">
+            <p class="footer__col-title">About Us</p>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu-item"><a href="/">Support Center</a></li>
+                <li class="menu-item"><a href="/">Customer Support</a></li>
+                <li class="menu-item"><a href="/">About Us</a></li>
+                <li class="menu-item"><a href="/">Copyright</a></li>
+                <li class="menu-item"><a href="/">Popular Campaign</a></li>
+              </ul>
+            </nav>
           </div>
-
+          <div class="footer__col">
+            <p class="footer__col-title">Our Information</p>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu-item"><a href="/">Return Policy </a></li>
+                <li class="menu-item"><a href="/">Privacy Policy</a></li>
+                <li class="menu-item"><a href="/">Terms & Conditions</a></li>
+                <li class="menu-item"><a href="/">Site Map</a></li>
+                <li class="menu-item"><a href="/">Store Hours</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">My Account</p>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu-item"><a href="/">Press inquiries</a></li>
+                <li class="menu-item"><a href="/">Social media</a></li>
+                <li class="menu-item"><a href="/">directories</a></li>
+                <li class="menu-item"><a href="/">Images & B-roll</a></li>
+                <li class="menu-item"><a href="/">Permissions</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Policy</p>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu-item"><a href="/">Application security</a></li>
+                <li class="menu-item"><a href="/">Software principles</a></li>
+                <li class="menu-item"><a href="/">Unwanted software policy</a></li>
+                <li class="menu-item"><a href="/">Responsible supply chain</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <?php
-
-        if (is_active_sidebar('custom-footer-widget')) : ?>
-          <?php dynamic_sidebar('custom-footer-widget'); ?>
-
-        <?php endif; ?>
       </div>
-    </div>
-  </div>
-
-  <div class="footer__copyright-block">
-    <div class="container">
-      <p class="footer__copyright"><?php the_field('copyright', 'options') ?></p>
     </div>
   </div>
 </footer>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <?php wp_footer(); ?>
+
 </body>
 
 </html>
