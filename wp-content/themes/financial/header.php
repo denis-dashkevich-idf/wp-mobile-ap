@@ -12,7 +12,7 @@
 
 <body>
 
-<header class="header">
+<header class="header <?php echo is_front_page() ? '' : 'header_ip'; ?>">
     <div class="container">
       <div class="header__inner">
         <a href="/" class="header__logo-wrap">
@@ -20,75 +20,27 @@
           <span class="header__logo-text">Landguru</span>
         </a>
         <div class="header__menu-container">
-          <nav class="header__nav">
-            <ul class="header__menu menu">
-              <li class="menu-item">
-                <a href="/blog.html">Blog</a>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="/">Adversite</a>
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-has-children">
-                    <a href="">subitem 1</a>
-                    <ul class="sub-menu">
-                      <li class="menu-item">
-                        <a href="">subitem 1</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="">subitem 2</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="">subitem 3</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 2</a>
-                  </li>
-                  <li class="menu-item menu-item-has-children">
-                    <a href="">subitem 3</a>
-                    <ul class="sub-menu">
-                      <li class="menu-item">
-                        <a href="">subitem 1</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="">subitem 2</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="">subitem 3</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 4</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="/">Supports</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="">subitem 1</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 2</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 3</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 4</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="">subitem 5</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="/contacts.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
+
+          <?php
+          wp_nav_menu( [
+            'theme_location'  => 'primary',
+            'menu'            => '',
+            'container'       => 'nav',
+            'container_class' => 'header__nav',
+            'container_id'    => '',
+            'menu_class'      => 'header__menu menu',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',
+          ] );
+          ?>
         </div>
         <a href="<?php echo get_field('link', 'option')['url'] ?>" class="header__cta btn"><?php echo get_field('link', 'option')['title'] ?></a>
         <div class="header__burger burger">

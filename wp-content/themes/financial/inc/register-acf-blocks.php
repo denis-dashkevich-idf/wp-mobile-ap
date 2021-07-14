@@ -95,5 +95,25 @@ function my_acf_init_block_types() {
             'icon'              => 'admin-comments',
             'keywords'          => array( 'faq', 'Вопрос ответ' ),
         ));
+       // register a blog-news block.
+        acf_register_block_type(array(
+            'name'              => 'blog-news',
+            'title'             => __('blog-news/Блоговые записи'),
+            'description'       => __('blog-news'),
+            'render_template'   => 'template-parts/blocks/blog-news.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'blog-news', 'Блоговые записи' ),
+        ));
+       // register a contacts block.
+        acf_register_block_type(array(
+            'name'              => 'contacts',
+            'title'             => __('contacts/Карта'),
+            'description'       => __('contacts'),
+            'render_template'   => 'template-parts/blocks/contacts.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'contacts', 'Карта' ),
+        ));
     }
 }
