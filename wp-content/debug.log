@@ -81,3 +81,19 @@ Stack trace:
 [12-Jul-2021 18:18:42 UTC] PHP Warning:  Illegal string offset 'url' in C:\OS\OSPanel\domains\mobile-app.local\wp-content\themes\financial\header.php on line 93
 [12-Jul-2021 18:18:42 UTC] PHP Warning:  Illegal string offset 'title' in C:\OS\OSPanel\domains\mobile-app.local\wp-content\themes\financial\header.php on line 93
 [14-Jul-2021 16:57:01 UTC] PHP Notice:  Функция acf_register_block_type вызвана <strong>неправильно</strong>. Тип блока "acf/faq" уже зарегистрирован. Дополнительную информацию можно найти на странице <a href="https://ru.wordpress.org/support/article/debugging-in-wordpress/">&laquo;Отладка в WordPress&raquo;</a>. (Это сообщение было добавлено в версии 5.8.0.) in C:\OS\OSPanel\domains\mobile-app.local\wp-includes\functions.php on line 5313
+[14-Jul-2021 17:45:14 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_SimpleSchedule
+[14-Jul-2021 17:45:14 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
+[14-Jul-2021 17:45:14 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
+[14-Jul-2021 17:45:14 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
+[14-Jul-2021 17:49:07 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_SimpleSchedule
+[14-Jul-2021 17:49:07 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
+[14-Jul-2021 17:49:07 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
+[14-Jul-2021 17:49:07 UTC] WP Migrate DB - Failed to instantiate object for replacement. If the serialized object's class is defined by a plugin, you should enable that plugin for migration requests. 
+Class Name: ActionScheduler_NullSchedule
