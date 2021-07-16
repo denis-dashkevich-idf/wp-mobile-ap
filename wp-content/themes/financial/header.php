@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="<?php body_class(); ?>">
+<body <?php body_class(); ?>>
 
 <header class="header <?php echo is_front_page() ? '' : 'header_ip'; ?>">
     <div class="container">
